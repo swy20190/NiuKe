@@ -71,3 +71,10 @@ print(num, end=" ")
 
 ### HJ 11
 string 没有 reverse()方法，需要使用list(string)转化为list才行
+
+### HJ 24
+动态规划-二分查找优化
+python 输入一行以空格分隔的树：
+```python
+input_list = list(map(int, input().split()))
+```
