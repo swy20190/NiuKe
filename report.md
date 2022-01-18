@@ -78,3 +78,32 @@ python 输入一行以空格分隔的树：
 ```python
 input_list = list(map(int, input().split()))
 ```
+
+### HJ 80
+数组去重：
+```python
+old_list = [1, 1, 4, 5, 1, 4]
+new_list = list(set(old_list))
+```
+
+### HJ 97
+保留小数点后两位
+```python
+n = 114.514
+new_n = round(n, 2) # new_n = 114.51
+```
+
+### HJ 108
+math库求最大公因数：
+```python
+import math
+a = 114
+b = 514
+c = math.gcd(a, b)
+```
+
+### NC 11
+python 里面最小值，相当于c++里的INT_MIN：
+```python
+float("-inf")
+```
