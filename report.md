@@ -14,6 +14,36 @@ b = a[3:-1] # b=[4, 5]
 c = a[3:]   # c=[4, 5, 6]
 ```
 
+### Algo NC 15
+使用全局变量保存结果，dfs也能返回层序遍历的结果
+
+### Algo NC 190
+python set
+```python
+test = set()
+test1 = set([1, 2, 3])
+test2 = list(test1)
+test1.add(4)  # 添加元素
+test1.discard(4) # 删去元素， 元素不存在不报错
+
+x = set('eleven')
+y = set('twelve')
+# x,y ({'l', 'e', 'n', 'v'}, {'e', 'v', 'l', 't', 'w'})
+x & y  #交集
+#{'l', 'e', 'v'}
+x | y  #并集
+#{'e', 'v', 'n', 'l', 't', 'w'}
+x - y  #差集
+# {'n'}
+y -x   #差集
+# {'t', 'w'}
+x ^ y  #补集
+# {'t', 'n', 'w'}
+y ^ x  #补集
+#{'w', 'n', 't'}
+
+```
+
 ### HJ 3
 python
 
@@ -101,6 +131,15 @@ input_list = list(map(int, input().split()))
 old_list = [1, 1, 4, 5, 1, 4]
 new_list = list(set(old_list))
 ```
+
+### HJ 82
+埃及分数
+
+令c=int(a/b)+1
+
+则
+
+a/b = 1/c + (a*c-b)/b*c
 
 ### HJ 97
 保留小数点后两位
